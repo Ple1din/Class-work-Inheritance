@@ -1,3 +1,6 @@
+//
+// Created by y4r1k on 15/05/2025.
+//
 
 #ifndef PLANT_H
 #define PLANT_H
@@ -14,14 +17,16 @@ class Plant {
 
     public:
       Plant();
-      Plant(string name, int wateringF, Weather weather);
+      Plant(string name, int wateringFrequency, string Weather.getCondition());
       string getName() const;
-      void set_Name(string name);
-      int get_WateringF() const;
-      void set_WateringF(int wateringF);
-      Weather get_Weather() const;
-      void set_weather(Weather weather);
+      void setName(string name);
+      int getWateringFrequency() const;
+      void setWateringFrequency(int wateringFrequency);
+      Weather getWeather() const;
+      void setWeather(Weather weather);
       virtual string determineNeeds();
 };
 
-#endif 
+
+
+#endif //PLANT_H
