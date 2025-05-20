@@ -13,7 +13,8 @@ class Partial_Shade_Plant: {
         Partial_Shade_Plant(int);
         void set_lightSensitivity(int);
         int get_lightSensitivity();
-        string determineNeeds();
+        string determineNeeds()override;
+        string determineNeeds(int);
 };  
 
 #endif
