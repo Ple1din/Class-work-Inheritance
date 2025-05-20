@@ -10,7 +10,7 @@ Weather::Weather(string cond) {
 }
 
 // Devuelve la condicion actual del clima
-string Weather::getWeatherInfo() {
+string Weather::getWeather() {
     return condition;
 }
 
